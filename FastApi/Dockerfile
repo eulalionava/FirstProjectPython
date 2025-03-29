@@ -7,7 +7,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y build-essential
 
 # Copiar archivos de requerimientos e instalar dependencias en un venv
-COPY ../requirements.txt .
+COPY requirements.txt .
 RUN python -m venv /opt/venv && \
     /opt/venv/bin/pip install --no-cache-dir --upgrade pip && \
     /opt/venv/bin/pip install --no-cache-dir -r requirements.txt
