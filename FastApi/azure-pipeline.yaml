@@ -20,5 +20,5 @@ steps:
     containerRegistry: 'ACRNODEAPI'
     repository: 'python_api'
     command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
+    Dockerfile: './Dockerfile'
     buildContext: './'
